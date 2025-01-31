@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ master ]  	# 监听 master 分支的推送
+    
+permissions:
+  contents: write      # 允许写入仓库内容
+  pages: write        # 允许写入 GitHub Pages
+  id-token: write     # 允许写入 token
 
 jobs:
   build-and-deploy:
