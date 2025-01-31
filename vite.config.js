@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/githubActionTest/',  // 添加 base 配置，使用仓库名称
   plugins: [
     vue(),
     vueDevTools(),
